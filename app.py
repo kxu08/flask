@@ -2,9 +2,16 @@ from flask import Flask, render_template, request, json
 
 app = Flask(__name__)
 
+'''
 @app.route('/')
 def hello():
     return render_template('hello.html')
+'''
+
+@app.route('/')
+def welcome():
+    return render_template('welcome.html')
+
 
 @app.route('/signUp')
 def signUp():
@@ -12,9 +19,11 @@ def signUp():
 
 @app.route('/signUpUser', methods=['POST'])
 def signUpUser():
-    user =  request.form['username'];
-    password = request.form['password'];
-    return json.dumps({'status':'OK','user':user,'pass':password});
+    fullname =  request.form['fullname'];
+    zipcode = request.form['zipcode'];
+    dob = request.form['dob'];
+    email = request.form['email'];
+    return json.dumps({'status':'OK','fullname':fullname,'zipcode':zipcode, 'dob':dob, 'email':email});
 
 
 if __name__=="__main__":
