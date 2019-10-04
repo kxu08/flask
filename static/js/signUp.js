@@ -11,8 +11,8 @@ $(function(){
 		var jsonToSend = {
 		    fullname: fullname,
 		    zipcode: zipcode,
-		    dob = dob,
-		    email = email;
+		    dob: dob,
+		    email: email
 		}
 
 		$.ajax({
