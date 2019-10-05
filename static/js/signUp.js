@@ -1,10 +1,30 @@
 $(function(){
-	$('button').click(function(){
+
+/
+	$('#Beach').click(function(){
+		var property = "Beach";
+	})
+
+	$('#Mountains').click(function(){
+		var property = "Mountain";
+	})
+
+	$('#Countryside').click(function(){
+		var property = "Countryside";
+	})
+
+	$('#City').click(function(){
+		var property = "City";
+	})
+/
+
+	$('#btn5').click(function(){
 		var fullname = $('#inputUsername').val();
 		var zipcode = $('#inputZipcode').val();
 		var dob = $('#inputDOB').val();
 		var email = $('#inputEmail').val();
 		var status = 'OK'
+
 
 		// This is what is being dumped as json
 		var jsonToSend = {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta name="description" content="">
+	 <meta name="author" content="">
+
+	 <title>SafelyScore Demo Page </title>
+
+	 <link href="static/css/bootstrap.min.css" rel="stylesheet">
+	 <link href="static/css/signup.css" rel="stylesheet">
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	 <script src="static/js/signUp.js"></script>
+
+
+</head>
+
+<body>
+
+	<h3 id="instruction" align="center" class="form-signin-heading">Welcome to SafelyScore Demo Session! </h3>
+
+	<div class="container">
+	<form class="form-signin" id="lookUp" role="form">
+	<p> Full Name: </p>
+	<input type="text" id="inputUsername" name="fullname" class="form-control" placeholder="First Name Last Name" required autofocus>
+	<p> Home Address Zipcode: </p>
+	<input type="text" id="inputZipcode" name="zipcode" class="form-control" placeholder="5 digit zipcode" required autofocus>
+	<p> Date of Birth: </p>
+	<input type="text" id="inputDOB" name="dob" class="form-control" placeholder="Format yyyy/mm/dd" required autofocus>
+	<p> Email address: </p>
+        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+	<p> Please choose a property you want to stay in: <p>
+        <button id="Beach" class="btn btn-lg btn-primary btn-block" type="button" value={"# of guests": 8, "lead_time": 2}> <u>Beach</u> <br/> 8 guests <br/> 2 day advance notice <br/> 3 day stay <br/> 3 double beds <br/> 2 baths <br/> 4th of July </button>
+        <button id="Mountains" class="btn btn-lg btn-primary btn-block" type="button" value={"# of guests": 4, "lead_time": 7}> <u>Mountains</u> <br/> 4 guests <br/> 7 day advance notice <br/> 7 day stay <br/> 3 double beds <br/> 2 baths <br/> Mid January </button>
+        <button id="Countryside" class="btn btn-lg btn-primary btn-block" type="button" value={"# of guests": 14, "lead_time": 95}> <u>Countryside</u> <br/> 14 guests <br/> 95 day advance notice <br/> 10 day stay <br/> 8 double beds <br/> 6 baths <br/> Early August </button>
+        <button id="City" class="btn btn-lg btn-primary btn-block" type="button" value={"# of guests": 2, "lead_time": 30}> <u>City</u> <br/> 2 guests <br/> 30 day advance notice <br/> 5 day stay <br/> 2 double beds <br/> 1 baths <br/> New Year's Eve </button>
+	<button id="btn5" class="btn btn-lg btn-primary btn-block" type="button">Generate SafelyScore</button>
+		</form>
+     </div>
+</body>
+
+</html>
