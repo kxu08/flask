@@ -6,7 +6,6 @@ $(function(){
 		var email = $('#inputEmail').val();
 		var status = 'OK'
 
-
 		// This is what is being dumped as json
 		var jsonToSend = {
 		    fullname: fullname,
